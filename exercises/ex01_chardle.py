@@ -38,4 +38,3 @@ else:
         print(str(inst) + " instance of " + one_chartr + " found in " + new_word)
     else: 
         print(str(inst) + " instances of " + one_chartr + " found in " + new_word)
-
