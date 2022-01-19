@@ -13,28 +13,28 @@ if(len(one_chartr) != 1):
     exit()
 
 print("Searching for " + one_chartr + " in " + new_word)
-inst: int = 0
+ct_inst: int = 0
 
 if one_chartr == new_word[0]:
     print(one_chartr + " found at index 0")
-    inst = inst + 1
+    ct_inst = ct_inst + 1
 if one_chartr == new_word[1]:
     print(one_chartr + " found at index 1")
-    inst = inst + 1
+    ct_inst = ct_inst + 1
 if one_chartr == new_word[2]:
     print(one_chartr + " found at index 2")
-    inst = inst + 1
+    ct_inst = ct_inst + 1
 if one_chartr == new_word[3]:
     print(one_chartr + " found at index 3")
-    inst = inst + 1
+    ct_inst = ct_inst + 1
 if one_chartr == new_word[4]: 
     print(one_chartr + " found at index 4")
-    inst = inst + 1
+    ct_inst = ct_inst + 1
 
-if inst == 0:
+if ct_inst == 0:
     print("No instances of " + one_chartr + " found in " + new_word)
 else:
-    if inst == 1:
-        print(str(inst) + " instance of " + one_chartr + " found in " + new_word)
+    if ct_inst == 1:
+        print(str(ct_inst) + " instance of " + one_chartr + " found in " + new_word)
     else: 
-        print(str(inst) + " instances of " + one_chartr + " found in " + new_word)
+        print(str(ct_inst) + " instances of " + one_chartr + " found in " + new_word)
