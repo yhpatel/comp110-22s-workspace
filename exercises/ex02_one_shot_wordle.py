@@ -1,4 +1,4 @@
-"""EX02 - One Shot Wordle"""
+"""EX02 - One Shot Wordle."""
 
 __author__ = "730463236"
 
@@ -13,19 +13,19 @@ emoji_count: str = ""
 i: int = 0
 
 while len(guess_word) != word_length:
-    guess_word: str = input(f"That was not {word_length} letters! Try again: ")
+    guess_word = input(f"That was not {word_length} letters! Try again: ")
     
 while i < word_length:
     if guess_word[i] != secret_word[i]:
         c: int = 0
         check_var: bool = False
-        while check_var != True and c < word_length:
+        while check_var is not True and c < word_length:
             if guess_word[i] == secret_word[c]:
                 check_var = True
                 c = c + 1
             else:
                 c = c + 1
-        if check_var == True:
+        if check_var is True:
             emoji_count = emoji_count + YELLOW_BOX
         else:
             emoji_count = emoji_count + WHITE_BOX
