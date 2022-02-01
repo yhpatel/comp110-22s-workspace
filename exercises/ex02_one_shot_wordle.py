@@ -2,6 +2,7 @@
 
 __author__ = "730463236"
 
+# This is where I defined the variables
 secret_word: str = "python"
 word_length: int = len(secret_word)
 guess_word: str = input(f"What is your {word_length}-letter guess? ")
@@ -11,12 +12,12 @@ GREEN_BOX: str = "\U0001F7E9"
 YELLOW_BOX: str = "\U0001F7E8"
 emoji_count: str = ""
 i: int = 0
-
+# This checks if the length of the guess word is equal to the word length
 while len(guess_word) != word_length:
     guess_word = input(f"That was not {word_length} letters! Try again: ")
-    
+# This determines the color of the box for the assigned letter
 while i < word_length:
-    if guess_word[i] != secret_word[i]:
+    if guess_word[i] != secret_word[i]: 
         c: int = 0
         check_var: bool = False
         while check_var is not True and c < word_length:
@@ -32,7 +33,7 @@ while i < word_length:
     else:
         emoji_count = emoji_count + GREEN_BOX
     i = i + 1
-    
+# This is what prints the output
 if guess_word == secret_word:
     print(f"{emoji_count} \nWoo! You got it!")
 else:
