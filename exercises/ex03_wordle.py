@@ -1,4 +1,4 @@
-"""EX03 - Structured Wordle"""
+"""EX03 - Structured Wordle."""
 
 __author__ = "730463236"
 
@@ -18,7 +18,7 @@ def contains_char(guess_word: str, single_char: str) -> bool:
             
 
 def emojified(guess: str, secret: str) -> str:
-    """This returns the emojis that signify the accuracy of the letters of the guess word in comparison to the secret word"""
+    """This returns the emojis that signify the accuracy of the letters of the guess word in comparison to the secret word."""
     assert len(guess) == len(secret)
     WHITE_BOX: str = "\U00002B1C"
     GREEN_BOX: str = "\U0001F7E9"
@@ -40,15 +40,15 @@ def emojified(guess: str, secret: str) -> str:
 
 
 def input_guess(exp_length: int) -> str:
-    """The guess of the correct word length will be prompted for"""
+    """The guess of the correct word length will be prompted for."""
     guess_word: str = input(f"Enter a {exp_length} character word: ")
-    while exp_length != len(guess_word):
-        guess_word = input(f"That was not {exp_length} letters! Try again: ")
+    while len(guess_word) != exp_length:
+        guess_word = input(f"That wasn't {exp_length} chars! Try again: ")
     return guess_word
 
 
 def main() -> None:
-    """This is the main loop for the Wordle game and start of the main program"""
+    """This is the main loop for the Wordle game and start of the main program."""
     secret_word: str = "codes"
     turn_count: int = 1
     the_guess: str = ""
