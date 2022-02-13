@@ -49,7 +49,7 @@ def input_guess(exp_length: int) -> str:
 
 def main() -> None:
     """This is the main loop for the Wordle game and start of the main program."""
-    secret_word: str = "codes"
+    secret_word: str = "penispe"
     turn_count: int = 1
     the_guess: str = ""
     won_check: bool = False
