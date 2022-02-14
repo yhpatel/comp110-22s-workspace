@@ -11,10 +11,11 @@ def main() -> None:
     """This is the entrypoint for my scene."""    
     sunset: Turtle = Turtle()
     sunset.screen.bgcolor("light blue")
-    sunset.speed(10)
+    sunset.speed(50)
     sun_ray(sunset, 0, 190)
     draw_circle(sunset, 0, 90)
     mountain(sunset, -1000, -500)
+    """I have called the plane function twice, drawing a plane in two different locations in lines 20 and 22."""
     small_mount(sunset, -1000, -500)
     plane(sunset, 400, 190)
     sunset.right(45)
@@ -33,7 +34,7 @@ def draw_triangle(sunset: Turtle, x: float, y: float) -> None:
 
 
 def draw_circle(sunset: Turtle, x: float, y: float) -> None: 
-    """This function creates a circle which represents the sun. It has a yellow border and has an orange filling."""
+    """This function creates a circle which represents the sun. It has a yellow border and has an orange filling as shown in line 41."""
     sunset.penup()
     sunset.goto(x, y)
     sunset.pendown()
@@ -67,7 +68,7 @@ def mountain(sunset: Turtle, x: float, y: float) -> None:
         sunset.goto(x, y)
         sunset.pendown()
         sunset.begin_fill()
-        """I call the draw_triangle function to draw the brown mountains."""
+        """I call the draw_triangle function to draw the brown mountains in line 72."""
         draw_triangle(sunset, 500, 120)
         sunset.end_fill()
         x = x + 60
@@ -81,6 +82,7 @@ def small_mount(sunset: Turtle, x: float, y: float) -> None:
     """This function constructs a smaller array of mountains of random sizes."""
     i: int = 0 
     sunset.color("green", "green")
+    """I have implemented a loop that draws smaller mountains of random sizes in lines 86-98."""
     while i < 28:
         forw_length: int = randint(250, 450)
         sunset.penup()
