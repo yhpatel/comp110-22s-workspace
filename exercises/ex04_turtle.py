@@ -6,6 +6,9 @@ from turtle import Turtle, colormode, done
 from random import randint
 colormode(225)
 
+"""Question 7 - I called the draw triangle function (lines 28-34) within the mountain function (line 73) and the small_mount function (line 94) to break up the process.
+Question 8 - I attempted to randomize the size/side lengths of the green small mountains using the randint function (lines 89, 95) to create something unique and random. """
+
 
 def main() -> None: 
     """This is the entrypoint for my scene."""    
