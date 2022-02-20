@@ -14,10 +14,10 @@ def test_only_evens_empty() -> None:
     assert only_evens(num) == []
 
 
-def test_only_evens_less() -> None:
+def test_only_evens_less() -> None: 
     """Testing the only_evens function with a small string."""
-    num: list[int] = [1, 2, 3, 4, 5, 6]
-    assert only_evens(num) == [2, 4, 6]
+    num: list[int] = [1, 2, 3, 4, 5]
+    assert only_evens(num) == [2, 4]
 
 
 def test_only_evens_more() -> None:
