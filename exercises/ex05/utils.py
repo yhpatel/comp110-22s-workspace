@@ -11,7 +11,7 @@ def only_evens(num: list[int]) -> list[int]:
     while i < len(num):
         if num[i] % 2 == 0:
             num2.append(num[i])
-            i += 1
+        i += 1
     return num2
     
 
@@ -25,7 +25,7 @@ def sub(num: list[int], first_index: int, end_index: int) -> list[int]:
     if end_index >= len(num):
         end_index = len(num) - 1
     if len(num) == 0 or first_index > len(num) or end_index <= 0:
-        num2: list[int] = []
+        num2 = []
 
     while first_index <= end_index:
         num2.append(num[first_index])
@@ -42,7 +42,7 @@ def concat(num_evens: list[int], num_sub: list[int]) -> list[int]:
         num_concat.append(num_evens[i])
         i += 1
     
-    i: int = 0
+    i = 0
     while i < len(num_sub):
         num_concat.append(num_sub[i])
         i += 1

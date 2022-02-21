@@ -1,8 +1,8 @@
 """Tests for util programs."""
 
-from exercises.ex05.utils import only_evens
-from exercises.ex05.utils import sub 
-from exercises.ex05.utils import concat
+from utils import only_evens
+from utils import sub 
+from utils import concat
 
 
 """Testing the only_evens function."""
