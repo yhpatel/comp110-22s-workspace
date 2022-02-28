@@ -17,24 +17,18 @@ def invert(a: dict[str, str]) -> dict[str, str]:
 def favorite_color(a: dict[str, str]) -> str:
     """This favorite_color fucntion outputs the color with the maxiumum apperances in the dictionary."""
     final_color: str = ""
-    color_count: int = 0
     final_dict: dict[str, int] = dict()
     for key in a:
         if a[key] in final_dict:
-            color_count += 1
-            final_dict[a[key]] = color_count
+            final_dict[a[key]] += 1
         else:
-            color_count = 1
-            final_dict[a[key]] = color_count
+            final_dict[a[key]] = 1
+    
     max: int = 0
     for key in final_dict:
         if final_dict[key] > max:
             max = final_dict[key]
-    for key in final_dict:
-        if final_dict[key] == max:
             final_color = key
-            return final_color
-        
     return final_color
 
 
