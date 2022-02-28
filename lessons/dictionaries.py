@@ -1,6 +1,5 @@
 """Demostrations of dictionary capabilities."""
 
-
 # Declaring the type of a dictionary
 schools: dict[str, int]
 
@@ -49,3 +48,4 @@ print(schools)
 # Example looping over the keys of a dict
 for school in schools: 
     print(f"Key: {school} -> Value: {schools[school]}")
+
