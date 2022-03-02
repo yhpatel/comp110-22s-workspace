@@ -12,5 +12,5 @@ elif response == 1:
     print("Most likely")
 elif response == 2:
     print("Ask again later")
-else: 
+elif response == 3: 
     print("No way, not a chance")
